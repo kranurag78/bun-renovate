@@ -1,0 +1,29 @@
+{
+	packageRules: [
+		{
+			description: 'Update Github Actions',
+			groupName: 'github-actions',
+			matchManagers: ['github-actions'],
+			matchUpdateTypes: ['major', 'minor', 'patch', 'digest', 'pin', 'pinDigest'],
+			pinDigests: true,
+			commitMessageTopic: 'Github Actions group',
+			groupSlug: 'github-actions',
+			schedule: ['on friday']
+		},
+		{
+			description: 'Update Package.json',
+			groupName: 'update package.json',
+			matchManagers: ['bun'],
+			matchUpdateTypes: ['major', 'minor', 'patch'],
+			commitMessageTopic: 'update package.json',
+			groupSlug: 'update-package-json'
+		},
+		{
+			description: 'Update Bot Schedule',
+			matchManagers: ['github-actions'],
+			matchUpdateTypes: ['major', 'minor', 'patch'],
+			matchPackageNames: ['renovatebot/github-action'],
+			schedule: ['on the first day of the month']
+		}
+	]
+}
