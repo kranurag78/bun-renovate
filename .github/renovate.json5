@@ -28,6 +28,6 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
-  "enabledManagers": ["dockerfile", "gomod", "github-actions", "npm", "github-tags", "custom.regex"],
+  "enabledManagers": ["dockerfile", "gomod", "github-actions", "npm", "custom.regex"],
   "recreateWhen": "always"
   }
