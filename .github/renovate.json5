@@ -29,5 +29,6 @@
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
   "enabledManagers": ["dockerfile", "gomod", "github-actions", "npm", "custom.regex"],
-  "recreateWhen": "always"
+  "recreateWhen": "always",
+  "lockFileMaintenance": { "enabled": true }
   }
